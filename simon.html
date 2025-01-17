@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-info">
+            <h1>Simon Says</h1>
+            <p class="score">Score: <span id="score">0</span></p>
+            <p id="game-over" class="hidden">Game Over!</p>
+            <button id="start-btn">Start Game</button>
+        </div>
+
+        <div class="game-grid">
+            <button class="game-btn green" data-btn="0" aria-label="green"></button>
+            <button class="game-btn red" data-btn="1" aria-label="red"></button>
+            <button class="game-btn yellow" data-btn="2" aria-label="yellow"></button>
+            <button class="game-btn blue" data-btn="3" aria-label="blue"></button>
+        </div>
+    </div>
+    <script src="simon.js"></script>
+</body>
+</html>
